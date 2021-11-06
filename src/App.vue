@@ -1,10 +1,11 @@
-<script setup lang="ts">
-import Home from './components/Home.vue'
-</script>
 
 <template>
-  <Home />
+  <CarouselTitles />
 </template>
+
+<script setup lang="ts">
+import CarouselTitles from './components/CarouselTitles.vue'
+</script>
 
 <style>
 </style>
