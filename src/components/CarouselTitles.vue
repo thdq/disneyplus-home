@@ -1,7 +1,8 @@
 <template>
   <Carousel 
   	class="carousel"
-	:items-to-show="1.3"
+	:autoplay="2500"
+	:items-to-show="1.2"
 	:wrap-around="true"
 	>
     <Slide v-for="(title, index) in cauroselImages" :key="index">
@@ -32,6 +33,7 @@ const cauroselImages = [
 .carousel {
 	.carousel__slide img {
 		border-radius: 10px;
+    	min-height: 21vw;		
 	}
 	.carousel__pagination {
 		&-button {
@@ -39,7 +41,7 @@ const cauroselImages = [
     		width: 10px;
     		height: 11px;
     		border-radius: 100%;			
-			
+
 			&--active {
 				background-color: white;
 			}
