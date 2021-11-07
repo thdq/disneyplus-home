@@ -1,36 +1,21 @@
 <template>
-	<Swiper class="carousel"
-		:autoplay="carouselOptions.autoplay"
+  <Carousel 
+  	class="carousel"
+	:items-to-show="1.3"
+	:wrap-around="true"
 	>
-		<SwiperSlide v-for="(title, index) in cauroselImages" :key="index">
-			<img :src="title" />
-		</SwiperSlide>
-		<template class="swiper-pagination" #pagination></template>
-	</Swiper>
+    <Slide v-for="(title, index) in cauroselImages" :key="index">
+      <img :src="title" />
+    </Slide>
+    <template #addons>
+      <Pagination />
+    </template>	
+  </Carousel>
 </template>
 
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { SwiperOptions } from 'swiper/types';
- import 'swiper/css';
-
-const carouselOptions: SwiperOptions = {
-	slidesPerView: 3,
-    spaceBetween: 30,
-	centeredSlides: true,
-	autoplay: {
-		delay: 2500,
-		disableOnInteraction: false
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev'
-	}
-}
+import { Carousel, Slide, Pagination } from 'vue3-carousel';
+import 'vue3-carousel/dist/carousel.css';
 
 const cauroselImages = [
 	'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4E03D084F106940B62B0E9B4367A5875454B72F2ACDBB4351ABFD7508A8E109B/scale?width=1440&aspectRatio=3.91&format=jpeg',
@@ -42,18 +27,23 @@ const cauroselImages = [
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .carousel {
-	.swiper-slide {
-		display: flex;
-    	justify-content: center;
-
-		img { 
-			min-height: 25vw;
-    		border-radius: 10px;
+	.carousel__slide img {
+		border-radius: 10px;
+	}
+	.carousel__pagination {
+		&-button {
+			background-color: #919191;
+    		width: 10px;
+    		height: 11px;
+    		border-radius: 100%;			
+			
+			&--active {
+				background-color: white;
+			}
 		}
-
 	}
 	
 }
