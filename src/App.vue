@@ -20,7 +20,10 @@
 import CarouselTitles from './components/CarouselTitles.vue'
 import Brands from './components/Brands.vue'
 import Parcel from './components/base/Parcel'
-import { mountParcel } from './main'
+
+const { mountParcel } = defineProps({
+    mountParcel: Function
+})
 
 const parcelConfig = System.import('@disneyplus/disneyplus-collection')
 
@@ -38,6 +41,10 @@ const parcelConfig = System.import('@disneyplus/disneyplus-collection')
     flex-flow: row wrap;
     gap: 40px;
     place-content: center;
+}
+
+.collection-section {
+  padding: 0px 0px 26px;
 }
 
 </style>
