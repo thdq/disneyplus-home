@@ -1,6 +1,9 @@
 
 <template>
-  <CarouselTitles />
+  <section class="carousel-section">
+    <CarouselTitles />
+  </section>
+  
   <section class="brands-section">
     <Brands />
   </section>
@@ -12,6 +15,10 @@ import Brands from './components/Brands.vue'
 </script>
 
 <style scoped lang="scss">
+
+.carousel-section {
+  margin: 40px 0 40px;
+}
 
 .brands-section {
     margin: 40px 0 40px;
