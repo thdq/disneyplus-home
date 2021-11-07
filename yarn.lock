@@ -287,13 +287,6 @@ dom-serializer@^1.0.1:
     domhandler "^4.2.0"
     entities "^2.0.0"
 
-dom7@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.1.tgz#821209df1bfdf97dd82b5156e50f7cb66b3f166c"
-  integrity sha512-y/RWjw3gK3qQnZz6IqDaIoqH6+xBhcB3Wsh5HFwl0abwuO/NAgbSB31ZbxtBDcuDe8jAX5NYUNDLTx4Ul48sIw==
-  dependencies:
-    ssr-window "^4.0.0"
-
 domelementtype@^2.0.1, domelementtype@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-2.2.0.tgz#9a0b6c2782ed6a1c7323d42267183df9bd8b1d57"
@@ -802,19 +795,6 @@ sourcemap-codec@^1.4.4:
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
 
-ssr-window@^4.0.0, ssr-window@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.1.tgz#514bf2ca81952f63fe88e8b0c623a23f90f7feb3"
-  integrity sha512-5q936lkCk5Lg5hM6tG8Nutdym4vNiuFSWorslTzOn71PWb3Wnx44q/k2Ryn1LWA1G4FtxMzjywUFOiOxPkVGrA==
-
-swiper@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-7.2.0.tgz#aae2bb7632798467abd5c1ab3e2441598a70dbd7"
-  integrity sha512-CUL6Nvzcf3fU0b8dHaraYphgBT7l44PY1B6T8b+E12pim4DEcwFZDy/KZoIKrAnn+rfbayCmcksYmSDIP5nDHg==
-  dependencies:
-    dom7 "^4.0.1"
-    ssr-window "^4.0.1"
-
 to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
@@ -994,6 +974,11 @@ vue-tsc@^0.3.0:
   integrity sha512-zaDRZBxwRIz1XjhNP92FqugG71st6BUMnA2EwPeXrAyzbEYVRz6TezNFceYl3QYqqN8CtaxbqUhaQEDj/ntoCA==
   dependencies:
     vscode-vue-languageservice "^0.27.0"
+
+vue3-carousel@^0.1.30:
+  version "0.1.30"
+  resolved "https://registry.yarnpkg.com/vue3-carousel/-/vue3-carousel-0.1.30.tgz#bc12e364ab2b49571759beca6c7c1b26f36d59f5"
+  integrity sha512-J/kJSqyagNk4nGDeSKi0dFTTkNqPqRjX5WzLZUdlZPSE7swt75an1uVqdljUM7ZgDkqTHPNRfad4VHtI+IC+6g==
 
 vue@^3.2.16:
   version "3.2.21"

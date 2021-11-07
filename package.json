@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "single-spa-vue": "^2.5.1",
-    "swiper": "^7.2.0",
-    "vue": "^3.2.16"
+    "vue": "^3.2.16",
+    "vue3-carousel": "^0.1.30"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
