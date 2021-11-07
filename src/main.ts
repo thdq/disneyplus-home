@@ -2,11 +2,14 @@ import { createApp, h } from 'vue'
 import App from './App.vue'
 import singleSpaVue, { AppOptions } from 'single-spa-vue'
 
+export let mountParcel: unknown
+
 const vueLifecycles = singleSpaVue({
     createApp,
     appOptions: {
         render() {
             const ctx: AppOptions = this;
+            mountParcel = ctx.mountParcel
             return h(App, {
                 props: {
 
