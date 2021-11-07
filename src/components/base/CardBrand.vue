@@ -1,7 +1,7 @@
 <template>
 <div 
     class="card-brand"
-    @mouseenter="playVideo()"
+    @mouseenter="playVideo(videoEl)"
 >
     <div class="card-brand-image-container">
         <div>
@@ -29,9 +29,8 @@ const {image, video} = defineProps({
     video: String
 })
 
-const playVideo = () => {
-    console.log(videoEl)
-    videoEl.value?.play()
+const playVideo = (videoEl: HTMLVideoElement | undefined) => {
+    videoEl?.play()
 }
 
 </script>
