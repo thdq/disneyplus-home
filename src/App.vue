@@ -44,7 +44,7 @@ const parcelConfig = System.import('@disneyplus/disneyplus-collection')
 }
 
 .collection-section {
-  padding: 0px 0px 26px;
+  padding: 0px 48px;
 }
 
 </style>
